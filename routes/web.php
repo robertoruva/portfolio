@@ -15,5 +15,7 @@ Route::prefix('/api/rest')->name('api.rest.')->group(function () {
     Route::post('/create', [RestApiController::class, 'store'])->name('store');
 });
 
-Route::resource('lugares', LugarController::class);
+Route::resource('lugares', LugarController::class)->parameters([
+	'lugares' => 'lugar'
+]);
 

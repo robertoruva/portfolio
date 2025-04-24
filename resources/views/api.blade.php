@@ -7,7 +7,7 @@
 
     <ul class="list-group mt-4">
         <li class="list-group-item">
-            <a href="{{ route('api.rest.index') }}">1. API REST ? Gestión de productos</a>
+            <a href="{{ route('api.rest.index') }}">1. API REST ? GestiÃ³n de productos</a>
         </li>
         <li class="list-group-item">
             <a href="{{ route('api.websocket') }}">2. API WebSocket ? Tiempo real con notificaciones</a>

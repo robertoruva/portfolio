@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section()
+@section('content')
 <h1>Lugares</h1>
 <a href="{{ route('lugares.create') }}"> Nuevo lugar</a>
 
@@ -8,7 +8,7 @@
 	@foreach ( $lugares as $lugar )
 	<li>
 		{{ $lugar->nombre }} ({{ $lugar->pais }})
-		<a href="{{ route('lugar.edit', $lugar) }}">Editar</a>
+		<a href="{{ route('lugares.edit', $lugar) }}">Editar</a>
 		<form action="{{ route('lugares.destroy', $lugar) }}" method="post" style="display:inline">
 			@csrf
 			@method('DELETE')

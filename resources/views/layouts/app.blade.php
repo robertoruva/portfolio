@@ -24,6 +24,10 @@
                     <a class="nav-link {{ request()->routeIs('api.rest.*') ? 'active fw-bold' : '' }}"
                        href="{{ route('api.rest.index') }}">API REST</a>
                 </li>
+				<li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('lugares.*') ? 'active fw-bold' : '' }}"
+                       href="{{ route('lugares.index') }}">Lugares de España</a>
+                </li>
             </ul>
         </div>
     </div>
