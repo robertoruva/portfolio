@@ -19,10 +19,11 @@ class StoreLugarRequest extends FormRequest {
 	 */
 	public function rules(): array {
 		return [
-			'nombre' => 'required|string|max:255',
-			'pais' => 'required|string|max:255',
-			'latitud' => 'nullable|numeric|between:-90,90',
-			'longitud' => 'nullable|numeric|between:-180,180',
+			'nombre' 		=> 'required|string|max:255',
+			'pais' 			=> 'required|string|max:255',
+			'codigo_pais'	=> 'nullable|string|size:2',
+			'latitud' 		=> 'required|numeric|between:-90,90',
+			'longitud' 		=> 'required|numeric|between:-180,180',
 		];
 	}
 }

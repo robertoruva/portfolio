@@ -19,16 +19,9 @@
 	@enderror
 	<br>
 
-	<label for="latitud">Latitud:</label>
-	<input id="latitud" type="text" name="latitud" value="{{ old('latitud', $lugar->latitud ?? '') }}">
-	@error('latitud')
-		<div style="color:red">{{ $message }}</div>
-	@enderror
-	<br>
-
-	<label for="longitud">Longitud:</label>
-	<input id="longitud" type="text" name="longitud" value="{{ old('longitud', $lugar->longitud ?? '') }}">
-	@error('longitud')
+	<label for="codigo_postal">Código postal:</label>
+	<input id="codigo_postal" type="text" name="codigo_postal" value="{{ old('codigo_postal', $lugar->codigo_postal ?? '') }}">
+	@error('codigo_postal')
 		div style="color:red">{{ $message }}</div>
 	@enderror
 	<br>
